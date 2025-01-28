@@ -220,6 +220,8 @@ void updateProductDetails(Product *p, int n)
 
     cout << "Enter the updated quantity of the product: ";
     cin >> p[i].quantity;
+
+    cout << "Product with product ID (" << id << ") updated successfully." << endl;
 }
 
 void addProduct(Product *&p, int &n)
