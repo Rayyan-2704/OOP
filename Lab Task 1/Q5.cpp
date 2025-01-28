@@ -124,7 +124,7 @@ void searchEvents(Event *e, int n)
 
 void addEvent(Event **e, int *n)
 {
-    if (e == nullptr || n <= 0)
+    if (*e == nullptr || *n <= 0)
     {
         cout << "No events have been initialized yet." << endl;
         return;
