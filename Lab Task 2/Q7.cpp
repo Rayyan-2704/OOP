@@ -139,7 +139,6 @@ void displayProducts(Product *p, int n)
         cout << endl << "Details of product " << (i + 1) << ": " << endl;
         cout << "Product ID: " << p[i].productID << endl;
         cout << "Product Name: " << p[i].productName << endl;
-        ;
         cout << "Price: " << fixed << setprecision(2) << p[i].price << endl;
         cout << "Quantity: " << p[i].quantity << endl;
     }
