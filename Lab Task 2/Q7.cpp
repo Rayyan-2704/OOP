@@ -288,13 +288,14 @@ void removeProduct(Product *&p, int &n)
 
     Product *newProducts = new Product[n - 1];
 
+    int counter = 0;
     for (int j = 0; j < n; j++)
     {
         if (j == i)
         {
             continue;
         }
-        newProducts[j] = p[j];
+        newProducts[counter++] = p[j];
     }
 
     delete[] p;
