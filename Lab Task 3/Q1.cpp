@@ -6,6 +6,7 @@ Then it should add the two initialized values together, leaving the result in th
 display the value of this third variable. Make appropriate member functions const.  */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Time
@@ -29,7 +30,7 @@ public:
 
     void displayTime()
     {
-        cout << hours << ":" << minutes << ":" << seconds << endl;
+        cout << hours << ":" << setw(2) << setfill('0') << minutes << ":" << setw(2) << setfill('0') << seconds << endl;
     }
 
     Time addTime(const Time &a, const Time &b)
