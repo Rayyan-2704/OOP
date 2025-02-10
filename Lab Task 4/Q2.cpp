@@ -1,3 +1,19 @@
+/* Scenario:
+A library system allows users to borrow and return books. The system should:
+1. Add new books to the collection.
+2. Borrow books (check availability).
+3. Return books.
+4. Display all available books.
+Requirements:
+    --> Implement a Book class with attributes: ID, title, author, availability.
+    --> Implement a Library class with:
+1. Method to add a book (with unique ID).
+2. Method to borrow a book (updates availability).
+3. Method to return a book (marks it available).
+4. Method to display all available books.
+    --> Store book records dynamically using pointers and DMA.
+    --> Use constructor overloading to initialize books with or without availability status. */
+
 #include <iostream>
 using namespace std;
 
