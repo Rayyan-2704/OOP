@@ -1,3 +1,18 @@
+/* You are building a student management system. Create a class `Student` to manage student records.
+Requirements:
+1. Attributes:
+    --> `studentID` (int)
+    --> `name` (string)
+    --> `age` (int)
+    --> `grade` (char)
+2. Define a default constructor that initializes `grade` to `'N'` (Not Assigned).
+3. Define a parameterized constructor to initialize all attributes.
+4. Add methods:
+    --> `promoteStudent()`: Upgrades the student's grade (e.g., from 'A' to 'B').
+    --> `isEligibleForScholarship()`: Returns `true` if the student's grade is 'A'.
+    --> `displayDetails()`: Displays the student's details.
+5. Create a few `Student` objects and test the methods. */
+
 #include <iostream>
 using namespace std;
 
