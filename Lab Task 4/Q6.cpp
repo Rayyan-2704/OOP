@@ -25,7 +25,7 @@ public:
         balance = 0.0;
     }
 
-    Bank(string accountNumber, string ownerName, double balance= 0.0)
+    Bank(string accountNumber, string ownerName, double balance = 0.0)
     {
         this->accountNumber = accountNumber;
         this->ownerName = ownerName;
