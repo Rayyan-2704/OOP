@@ -25,6 +25,7 @@ public:
     Square(float sideLength)
     {
         this->sideLength = sideLength;
+        area = 0.0;
     }
 
     void calculateArea()
