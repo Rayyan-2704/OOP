@@ -7,6 +7,9 @@ What happens if you do not make your function constant? Add a comment right abov
 explaining why we make a function constant.
 */
 
+/* If we had not declared our function constant, the string could have been altered inside the function. Making the function constant ensures that the 
+class data members (besides mutable members) remain constant throughout the function. */
+
 #include <iostream>
 using namespace std;
 
