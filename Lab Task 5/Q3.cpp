@@ -26,7 +26,7 @@ public:
         for (int i = 0; i < str.length(); i++)
         {
             int val = int(str.at(i));
-            if (!(val >= 65 && val <= 122))
+            if (!((val >= 65 && val <= 90) || (val >= 97 && val <= 122)))
             {
                 return false;
             }
