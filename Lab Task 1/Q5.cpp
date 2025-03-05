@@ -191,6 +191,8 @@ int main()
             cout << "Exiting the program...." << endl;
             delete[] events;
             return 0;
+        default:
+            cout << "Invalid choice entered! Try again." << endl;
         }
     }
 }
