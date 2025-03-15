@@ -109,6 +109,7 @@ int main(){
 
         default:
             cout << "Invalid choice!" << endl;
+            return 1;
     }
 
     if(c != nullptr){
