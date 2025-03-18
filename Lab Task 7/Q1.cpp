@@ -1,3 +1,13 @@
+/* Imagine developing a comprehensive banking system simulator for a prominent financial institution. In this system, a base class called Account encapsulates essential
+data members such as accountNumber, balance, accountHolderName, and optionally accountType. It offers member functions like deposit(amount) to add funds, withdraw(amount) to
+remove funds with proper error checking, calculateInterest() to compute interest based on varying rules, printStatement() to output detailed transaction histories, and
+getAccountInfo() to retrieve general account details.
+
+Derived classes like SavingsAccount, CheckingAccount, and FixedDepositAccount extend this structure by incorporating specialized data members--such as interestRate and
+minimumBalance for SavingsAccount or maturityDate and fixedInterestRate for FixedDepositAccount. These derived classes override key functions like calculateInterest() and
+printStatement() to provide account-type-specific functionalities. Additionally, the withdraw() function is overridden in specific accounts to apply different transaction rules, 
+ensuring that each account type follows realistic banking policies while maintaining polymorphic behavior. */
+
 #include <iostream>
 using namespace std;
 
