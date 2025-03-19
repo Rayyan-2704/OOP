@@ -108,24 +108,36 @@ public:
 };
 
 int main(){
-    Circle c(5, 10, 10, 3, 3, "red", 2);
-    c.draw();
-    cout << "Circle Area: " << c.calculateArea() << endl;
-    cout << "Circle Perimeter: " << c.calculatePerimeter() << endl << endl;
+    Shape *shapes[4];
+    shapes[0] = new Circle(5, 10, 10, 3, 3, "red", 2);
+    shapes[1] = new Rectangle(10, 5, 2, 2, "blue", 3);
+    shapes[2] = new Triangle(3, 4, 5, 1, 1, "green", 1);
+    shapes[3] = new Polygon(5, 6, 0, 0, "purple", 2);
 
-    Rectangle r(10, 5, 2, 2, "blue", 3);
-    r.draw();
-    cout << "Rectangle Area: " << r.calculateArea() << endl;
-    cout << "Rectangle Perimeter: " << r.calculatePerimeter() << endl << endl;
+    for(int i = 0; i < 4; i++){
+        shapes[i]->draw();
+        cout << "Area: " << shapes[i]->calculateArea() << endl;
+        cout << "Perimeter: " << shapes[i]->calculatePerimeter() << endl << endl;
+    }
+    
+    // Circle c(5, 10, 10, 3, 3, "red", 2);
+    // c.draw();
+    // cout << "Circle Area: " << c.calculateArea() << endl;
+    // cout << "Circle Perimeter: " << c.calculatePerimeter() << endl << endl;
 
-    Triangle t(3, 4, 5, 1, 1, "green", 1);
-    t.draw();
-    cout << "Triangle Area: " << t.calculateArea() << endl;
-    cout << "Triangle Perimeter: " << t.calculatePerimeter() << endl << endl;
+    // Rectangle r(10, 5, 2, 2, "blue", 3);
+    // r.draw();
+    // cout << "Rectangle Area: " << r.calculateArea() << endl;
+    // cout << "Rectangle Perimeter: " << r.calculatePerimeter() << endl << endl;
 
-    Polygon hexagon(5, 6, 0, 0, "purple", 2);
-    hexagon.draw();
-    cout << "Hexagon Area: " << hexagon.calculateArea() << endl;
-    cout << "Hexagon Perimeter: " << hexagon.calculatePerimeter() << endl << endl;
+    // Triangle t(3, 4, 5, 1, 1, "green", 1);
+    // t.draw();
+    // cout << "Triangle Area: " << t.calculateArea() << endl;
+    // cout << "Triangle Perimeter: " << t.calculatePerimeter() << endl << endl;
+
+    // Polygon hexagon(5, 6, 0, 0, "purple", 2);
+    // hexagon.draw();
+    // cout << "Hexagon Area: " << hexagon.calculateArea() << endl;
+    // cout << "Hexagon Perimeter: " << hexagon.calculatePerimeter() << endl << endl;
     return 0;
 }
