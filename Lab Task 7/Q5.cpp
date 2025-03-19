@@ -105,15 +105,15 @@ public:
     }
 };
 
-void searchMedia(const string title) {
+void searchMedia(const string title){
     cout << "Searching for media with title: " << title << endl;
 }
 
-void searchMedia(const long int ISBN) {
+void searchMedia(const long int ISBN){
     cout << "Searching for books with ISBN: " << ISBN << endl;
 }
 
-void searchMedia(const int publicationDate) {
+void searchMedia(const int publicationDate){
     cout << "Searching for media published in: " << publicationDate << endl;
 }
 
