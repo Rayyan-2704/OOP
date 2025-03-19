@@ -91,7 +91,7 @@ public:
     }
 };
 
-class Magazine : public Media {
+class Magazine : public Media{
     string writer;
     int numberOfPages;
 
