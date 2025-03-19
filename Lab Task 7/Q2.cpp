@@ -119,6 +119,10 @@ int main(){
         cout << "Area: " << shapes[i]->calculateArea() << endl;
         cout << "Perimeter: " << shapes[i]->calculatePerimeter() << endl << endl;
     }
+
+    for(int i = 0; i < 4; i++){
+        delete shapes[i];
+    }
     
     // Circle c(5, 10, 10, 3, 3, "red", 2);
     // c.draw();
