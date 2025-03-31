@@ -26,7 +26,7 @@ public:
 
     Ghost *operator+(const Ghost &other)
     {
-        // Assuming that when two Ghost objects are added a new ShadowPoltergeist forms
+        // Assuming that when two Ghost objects are added, a new Ghost forms.
         return new Ghost(this->name + " & " + other.name, this->scareLevel + other.scareLevel, "haunts everything");
     }
 };
