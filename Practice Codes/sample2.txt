@@ -1,1 +1,0 @@
-This is a sample text, for the purpose of File I/O in C++.
