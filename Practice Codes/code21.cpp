@@ -65,3 +65,74 @@ int main(){
     display(vec5);
     return 0;
 }
+
+/* Pointer Array using Vectors */
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int size = 5;
+    vector <int*> ptrArray(size);
+
+    for (int i = 0; i < ptrArray.size(); i++) {
+        ptrArray[i] = new int(i * 10);
+    }
+
+    cout << "Array of pointers using vector:\n";
+    for (int i = 0; i < ptrArray.size(); i++) {
+        cout << *ptrArray[i] << " ";
+    }
+    cout << endl;
+
+    for (int i = 0; i < ptrArray.size(); i++) {
+        delete ptrArray[i];
+    }
+
+    return 0;
+}
+
+/* 2D Array using vectors */
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int rows = 3;
+    vector <vector <int>> matrix(rows);
+
+    for (int i = 0; i < rows; i++) {
+        int cols = i + 2;  // Varying column sizes
+        matrix[i] = vector <int> (cols, 0);  // Assign a new vector to each row
+    }
+
+    for (int i = 0; i < matrix.size(); i++) {
+        for (int j = 0; j < matrix[i].size(); j++) {
+            matrix[i][j] = i * 10 + j;
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // int rows = 3;
+    // // Create an empty 2D vector
+    // vector<vector<int>> matrix;
+
+    // // Now give each row a different number of columns
+    // for (int i = 0; i < rows; ++i) {
+    //     int cols = i + 2;  // Just an example: row 0 has 2 cols, row 1 has 3 cols, etc.
+    //     vector<int> row(cols, 0);  // Initialize each row with 'cols' number of 0s
+    //     matrix.push_back(row);
+    // }
+
+    // // Assign and print values
+    // for (int i = 0; i < matrix.size(); ++i) {
+    //     for (int j = 0; j < matrix[i].size(); ++j) {
+    //         matrix[i][j] = i * 10 + j;
+    //         cout << matrix[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    return 0;
+}
