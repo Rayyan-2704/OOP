@@ -19,7 +19,7 @@ class LightBulb : public SmartDevice {
 public:
     LightBulb(bool status, int b) : isOn(status), brightness(b) {
         while(brightness < 0 || brightness > 100){
-            cout << "Invalid brightness level. Enter brightness levelo between 0% to 100%: ";
+            cout << "Invalid brightness level. Enter brightness level between 0% to 100%: ";
             cin >> brightness;
         }
     }
