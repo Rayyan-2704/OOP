@@ -18,7 +18,7 @@ void Library :: addBook(Book *b) {
     cout << "Book: " << b->getTitle() << " has been added to the Library inventory!" << endl;
 }
 
-void Library :: removeBook(const string& isbn) {
+void Library::removeBook(const string& isbn) {
     int index = -1;
 
     for(int i = 0; i < booksCount; i++) {
