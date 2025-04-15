@@ -3,11 +3,11 @@
 #include "Library.h"
 using namespace std;
 
-Library :: Library(int max) : booksCount(0), maxBooks(max) {
+Library::Library(int max) : booksCount(0), maxBooks(max) {
     books = new Book*[max];
 }
 
-void Library :: addBook(Book *b) {
+void Library::addBook(Book *b) {
     if(booksCount >= maxBooks) {
         cout << " Maximum book limit has been reached" << endl;
         return;
@@ -46,7 +46,7 @@ void Library::removeBook(const string& isbn) {
     cout << "Book: " << removedTitle << " has been removed from the Library inventory!" << endl;
 }
 
-void Library :: searchBook(const string& isbn) {
+void Library::searchBook(const string& isbn) {
     int flag = 0;
     int index;
 
@@ -66,7 +66,7 @@ void Library :: searchBook(const string& isbn) {
     cout << "Title: " << books[index]->getTitle() << " | Author: " << books[index]->getAuthor() << " | ISBN: " << books[index]->getISBN() << endl;
 }
 
-void Library :: displayAllBooks() const {
+void Library::displayAllBooks() const {
     if(booksCount == 0) {
         cout << "No books have been initialized yet." << endl;
         return;
@@ -77,7 +77,7 @@ void Library :: displayAllBooks() const {
     }
 }
 
-Library :: ~Library() {
+Library::~Library() {
     for(int i = 0; i < booksCount; ++i) {
         delete books[i];
     }
