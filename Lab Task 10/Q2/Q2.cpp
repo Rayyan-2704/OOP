@@ -30,36 +30,37 @@ int main(){
     cout << "Enter years of experience: ";
     cin >> yearsOfExperience;
 
-    fstream file;
-    file.open("resume.txt", ios::out | ios::trunc);
-    if (!file)
+    ofstream outFile;
+    outFile.open("resume.txt", ios::out | ios::trunc);
+    if (!outFile)
     {
         cout << "Error in opening the file!" << endl;
         exit(0);
     }
-    file << "Name: " << name << endl;
-    file << "Email: " << email << endl;
-    file << "Summary: " << summary << endl;
-    file << "Years of Experience: " << yearsOfExperience << endl;
-    file.close();
+    outFile << "Name: " << name << endl;
+    outFile << "Email: " << email << endl;
+    outFile << "Summary: " << summary << endl;
+    outFile << "Years of Experience: " << yearsOfExperience << endl;
+    outFile.close();
 
-    file.open("resume.txt", ios::in);
-    if (!file)
+    ifstream inFile;
+    inFile.open("resume.txt", ios::in);
+    if (!inFile)
     {
         cout << "Error in opening the file!" << endl;
         exit(0);
     }
     string line;
     cout << "Printing file details:\n";
-    while (!file.eof())
+    while (!inFile.eof())
     {
-        if (!file.eof())
+        if (!inFile.eof())
         {
-           getline(file, line);
+           getline(inFile, line);
            cout << line << endl;
         }
     }
-    file.close();
+    inFile.close();
 
     return 0;
 }
