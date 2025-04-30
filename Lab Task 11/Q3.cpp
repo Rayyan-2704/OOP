@@ -17,7 +17,7 @@ class FileNotFoundException : public FileException
 public:
     const char *what() const noexcept override
     {
-        return "FileNotFoundException - File not found";
+        return "FileNotFoundException - File not found!";
     }
 };
 
@@ -26,7 +26,7 @@ class PermissionDeniedException : public FileException
 public:
     const char *what() const noexcept override
     {
-        return "PermissionDeniedException - Access denied";
+        return "PermissionDeniedException - Access denied!";
     }
 };
 
