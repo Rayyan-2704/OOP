@@ -9,7 +9,7 @@ class NegativeNumberException : public exception
 public:
     const char *what() const noexcept override
     {
-        return "NegativeNumberException - Input must be non-negative";
+        return "NegativeNumberException - Input must be non-negative!";
     }
 };
 
