@@ -8,7 +8,7 @@ class StackOverflowException : public exception
 public:
     const char *what() const noexcept override
     {
-        return "StackOverflowException - Stack is full";
+        return "StackOverflowException - Stack is full!";
     }
 };
 
@@ -17,7 +17,7 @@ class StackUnderflowException : public exception
 public:
     const char *what() const noexcept override
     {
-        return "StackUnderflowException - Stack is empty";
+        return "StackUnderflowException - Stack is empty!";
     }
 };
 
