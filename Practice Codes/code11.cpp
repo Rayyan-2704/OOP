@@ -141,7 +141,7 @@ public:
         // this->x = new int(10); ---> same thing as below
         this->x = new int;
         *(this->x) = 10;
-        this->y = 9.99
+        this->y = 9.99;
     }
 
     // Parameterized Constructor
