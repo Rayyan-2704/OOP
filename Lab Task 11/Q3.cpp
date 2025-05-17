@@ -63,7 +63,6 @@ int main()
     catch (const FileException &e)
     {
         cout << "Error in validating \"" << fileName << "\": " << e.what() << endl;
-        ;
     }
 
     return 0;
